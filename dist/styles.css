@@ -592,6 +592,26 @@ video {
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-full {
+  top: 100%;
+}
+
+.-bottom-3 {
+  bottom: -0.75rem;
+}
+
+.-bottom-full {
+  bottom: -100%;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -774,6 +794,14 @@ video {
   width: 12rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -791,6 +819,14 @@ video {
 .rotate-90 {
   --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 .flex-col {
@@ -973,6 +1009,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -1293,8 +1334,20 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-1\/2 {
@@ -1303,6 +1356,10 @@ video {
 
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:flex-row {
@@ -1329,15 +1386,33 @@ video {
     gap: 1.25rem;
   }
 
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:text-left {
@@ -1356,6 +1431,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }

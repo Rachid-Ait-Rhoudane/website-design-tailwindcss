@@ -10,15 +10,28 @@
 <body>
 
     <nav class="container mx-auto p-6">
-        <div class="flex items-center justify-between">
+        <div class="relative flex items-center justify-between">
             <img width="200px" src="./images/logo-light.png" alt="tailwind logo">
-            <div class="hidden items-center md:flex space-x-6">
-                <a href="#" class="text-slate-900 hover:text-orange-500">Porfolio</a>
-                <a href="#" class="text-slate-900 hover:text-orange-500">About</a>
-                <a href="#" class="text-slate-900 hover:text-orange-500">Contact</a>
-                <a href="#" class="text-slate-900 hover:text-orange-500">Social</a>
-                <a href="#" class="bg-orange-500 hover:bg-slate-900 text-white py-2 px-6 rounded-full w-fit">Call Me</a>
+            <div class="text-3xl font-bold text-slate-900 md:hidden">
+                <i class="fa-solid fa-bars cursor-pointer"></i>
             </div>
+            <ul class="absolute rounded-md right-0 top-full bg-slate-100 w-3/5 p-5 md:bg-white md:w-auto md:p-0 md:relative md:top-0 md:flex md:items-center md:gap-6">
+                <li class="text-center py-3 md:py-0">
+                    <a href="#" class="text-slate-900 hover:text-orange-500">Porfolio</a>
+                </li>
+                <li class="text-center py-3 md:py-0">
+                    <a href="#" class="text-slate-900 hover:text-orange-500">About</a>
+                </li>
+                <li class="text-center py-3 md:py-0">
+                    <a href="#" class="text-slate-900 hover:text-orange-500">Contact</a>
+                </li>
+                <li class="text-center py-3 md:py-0">
+                    <a href="#" class="text-slate-900 hover:text-orange-500">Social</a>
+                </li>
+                <li class="text-center py-3 md:py-0">
+                    <a href="#" class="bg-orange-500 hover:bg-slate-900 text-white py-2 px-6 rounded-full w-fi">Call Me</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -69,7 +82,7 @@
 
     <footer class="bg-slate-900">
         <div class="container mx-auto p-6 text-white flex flex-col gap-10 lg:flex-row lg:justify-between">
-            <div class="flex flex-col items-center lg:items-start gap-10 min-h-[200px]">
+            <div class="flex flex-col items-center gap-10 min-h-[200px]">
                 <span>Copyright &copy; 2023, All Rights Reserved</span>
                 <img width="300px" src="./images/logo-dark.png" alt="tailwind logo">
                 <div class="flex justify-center gap-5 text-3xl">
